@@ -1,22 +1,4 @@
 var args = arguments[0] || {};
+$.make_lbl.text = args.make || 'Default Title';
+$.model.lbl.text = args.model || 'Default author';
 
-$.closeBtn.addEventListener('click', function() {
-	$.detailWindow.close();
-});
-
-$.car.set(args.data.attributes); 
-
-$.detailWindow.addEventListener('click', function() {
-	$.destroy();
-	
-});
-
-$.table.addEventListener('click', function(_event) {
-	var model = Alloy.Collections.cars._getbyCid(_event.rowData.modelId);
-	var detailController = Alloy.createController('detail', {
-		data:model
-	});
-	detailController.getView().open({
-		modal : true
-	});
-});

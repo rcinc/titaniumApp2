@@ -1,9 +1,11 @@
 <Alloy>
-	<Model src="cars" instance="true" id="car"/>
-		<Window id="detailWindow" model="$.car">
-			<Label id="make_lbl" text="$.car.make"></Label>
-			<Label id="model_lbl" text="$.car.model"></Label>
+		<Window id="detailWindow">
+			<View layout="vertical">
+			<Label id="make_lbl"></Label>
+			<Label id="model_lbl"></Label>
 			<Button id="closeBtn">Close Window</Button>
+			</View>
 		</Window>
 		
 </Alloy>
+
