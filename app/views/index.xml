@@ -1,0 +1,10 @@
+<Alloy>
+	<Collection src="cars" />
+	<Window id="mainWindow" class="container">
+	<TableView dataCollection="cars" dataTransform="transformFunction" 
+		dataFilter="filterFunction">
+		<TableViewRow title="{title}" modelId="{id}"></TableViewRow>
+	</TableView>
+	</Window>
+</Alloy>
+

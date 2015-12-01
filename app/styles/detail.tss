@@ -1,0 +1,23 @@
+
+".container" : {
+	backgroundColor: "white"
+  
+},
+"#detailWindow" : {
+	title: "Car Detail Window",
+	layout: 'vertical',
+	backgroundColor: 'white'
+}
+
+"Label" : {
+	top:10,
+	textAlign:'center',
+	font: {
+		fontWeight:'bold',
+		fontSize: '18'
+	}
+}
+"#closeBtn" : {
+		top : "20dp"
+	}
+
